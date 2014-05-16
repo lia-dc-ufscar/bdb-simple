@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">Simple BDB</string>
+	<string name="erase">Erase</string>
+	<string name="blue_marker">Blue Marker</string>
+	<string name="clear">Clear</string>
+	<string name="action_settings">Settings</string>
+
+</resources>

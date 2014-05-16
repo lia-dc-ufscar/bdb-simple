@@ -1,0 +1,53 @@
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:orientation="vertical"
+    android:columnCount="2"
+	android:rowCount="1"
+	android:background="@drawable/background"
+	tools:context=".MainActivity" >
+	
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+			android:layout_gravity="center"
+			android:orientation="vertical" >
+	
+			<!-- Buttons -->
+			
+			<ImageButton
+		        android:id="@+id/clear_btn"
+		        android:layout_width="56dp"
+		        android:layout_height="158dp"
+		        android:contentDescription="@string/clear"
+		        android:src="@drawable/clear"
+		        android:background="@drawable/button"
+		        android:layout_marginBottom="640dp" />
+	
+		    <ImageButton
+		        android:id="@+id/draw_btn"
+		        android:layout_width="56dp"
+		        android:layout_height="158dp"
+		        android:contentDescription="@string/blue_marker"
+		        android:src="@drawable/blue_marker"
+		        android:background="@drawable/button"
+		        android:layout_marginBottom="25dp" />
+	
+		    <ImageButton
+		        android:id="@+id/erase_btn"
+		        android:layout_width="56dp"
+		        android:layout_height="158dp"
+		        android:contentDescription="@string/erase"
+		        android:src="@drawable/erase"
+		        android:background="@drawable/button" />
+		</LinearLayout>
+		
+		<com.liaufscar.simplebdb.DrawingView
+	        android:id="@+id/drawing"
+	        android:layout_width="740dp"
+	        android:layout_height="1232dp"
+	        android:layout_gravity="fill"
+	        android:background="@drawable/court" />
+</GridLayout>
