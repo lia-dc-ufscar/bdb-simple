@@ -32,8 +32,6 @@ public class DrawingView extends View {
 	private Bitmap canvasBitmap;
 	// Brush sizes
 	private float brushSize;
-	// Erase flag
-	private boolean isErase = false;
 
 	public DrawingView(Context context, AttributeSet attrs){
 		super(context, attrs);

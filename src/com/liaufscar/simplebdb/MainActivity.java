@@ -54,6 +54,9 @@ public class MainActivity extends Activity implements OnClickListener {
 		// Clear button
 		clearBtn = (ImageButton) findViewById(R.id.clear_btn);
 		clearBtn.setOnClickListener(this);
+		
+		// Set drawBtn as active because it is the starting tool
+		drawBtn.setBackgroundResource(R.drawable.button_active);
 	}
 
 	@Override
@@ -69,10 +72,14 @@ public class MainActivity extends Activity implements OnClickListener {
 		if (view.getId() == R.id.draw_btn) {
 			drawView.setErase(false);
 			drawView.setBrushSize(brushSize);
+			drawBtn.setBackgroundResource(R.drawable.button_active);
+			eraseBtn.setBackgroundResource(R.drawable.button);
 		}
 		else if (view.getId() == R.id.erase_btn) {
 			drawView.setErase(true);
 			drawView.setBrushSize(eraserSize);
+			eraseBtn.setBackgroundResource(R.drawable.button_active);
+			drawBtn.setBackgroundResource(R.drawable.button);
 		}
 		else if (view.getId() == R.id.clear_btn)
 			drawView.startNew();
